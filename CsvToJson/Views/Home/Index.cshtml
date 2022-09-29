@@ -1,0 +1,12 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+@model CsvToJson.Models.FileModel
+
+<form method="post" asp-action="Index" enctype="multipart/form-data">
+    <div class="mb-3">
+        <label asp-for="fileUrl"></label>
+        <input type="file" name="file"/>
+    </div>
+    <button type="submit" class="btn btn-primary" style="width:150px">Submit</button>
+</form>
